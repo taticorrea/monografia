@@ -1,0 +1,122 @@
+import numpy as np 
+import matplotlib.pyplot as plt
+
+#Caso nao relativistico
+#alfa = 0.05 
+#beta = 0.005924
+#gamma = 5/3 
+
+#Caso relativistico
+alfa = 1.473  #caso relativistico
+beta = 52.46   #caso relativistico 
+gamma = 4/3  #caso relativistico
+
+u = 1/gamma
+
+#dp/dr = -alfap^(1/gamma)M/r^2
+#f = f(r,P,M)
+def f(r,P,M):
+    return (-alfa*np.power(P,u)*M)/np.power(r,2)
+
+#dM/dr = beta r^2p^(1/gamma)
+#g = g(r,P,M)
+def g(r,P,M):
+    return beta*np.power(r,2)*np.power(P,u)
+
+#Variaveis
+#Caso nao relativistico
+#h = 10.630630630631         #(10-15)
+#h = 13.3733733733735445   #(10-16)
+
+#Caso relativistico
+#h = 4.84484484484483 #(10-14)
+h = 8.608608608608778 #(10-15)
+#h = 15.0951 #(10-16)
+
+N = 1000
+P = np.empty(N)
+M = np.empty(N)
+r = np.empty(N)
+k1P = np.empty(N)
+k2P = np.empty(N)
+k3P = np.empty(N)
+k4P = np.empty(N)
+k1M = np.empty(N)
+k2M = np.empty(N)
+k3M = np.empty(N)
+k4M = np.empty(N)
+
+#Listas para plotar
+eixoP = []
+eixoM = []
+eixor = []
+eixok1P = []
+eixok2P = []
+eixok3P = []
+eixok4P = []
+eixok1M = []
+eixok2M = []
+eixok3M = []
+eixok4M = []
+
+#Condicoes iniciais
+r[0] = 0.0000000000000000000001
+P[0] = 1E-15
+M[0] = 0
+
+#Iteracao
+for i in np.arange(N-1):
+#Calculando valores de x
+    r[i+1] = r[i] + h
+    eixor.insert(i,r[i+1])
+
+#Calculando k1,k2,k3 e k4 e salvando em listas
+    k1P[i] = h*f(r[i],       P[i],              M[i] )
+    eixok1P.insert(i,k1P[i])
+    k1M[i] = h*g(r[i],       P[i],              M[i])
+    eixok1M.insert(i,k1M[i])
+    k2P[i] = h*f(r[i] + h/2, P[i] + k1P[i]/2, M[i] + k1M[i]/2)
+    eixok2P.insert(i,k2P[i])  
+    k2M[i] = h*g(r[i] + h/2, P[i] + k1P[i]/2, M[i] + k1M[i]/2)
+    eixok2M.insert(i,k2M[i])
+    k3P[i] = h*f(r[i] + h/2, P[i] + k2P[i]/2, M[i] + k2M[i]/2)
+    eixok3P.insert(i,k3P[i])  
+    k3M[i] = h*g(r[i] + h/2, P[i] + k2P[i]/2, M[i] + k2M[i]/2)
+    eixok3M.insert(i,k3M[i]) 
+    k4P[i] = h*f(r[i] + h,   P[i] + k3P[i], M[i] + k3M[i])
+    eixok4P.insert(i,k4P[i])  
+    k4M[i] = h*g(r[i] + h,   P[i] + k3P[i], M[i] + k3M[i])
+    eixok4M.insert(i,k4M[i])
+
+#Calculando yn+1 (recorrencia) e salvando em lista
+    P[i+1] = P[i] + (1/6)*(k1P[i] + 2*k2P[i] + 2*k3P[i] + k4P[i])
+    eixoP.insert(i,P[i])
+    M[i+1] = M[i] + (1/6)*(k1M[i] + 2*k2M[i] + 2*k3M[i] + k4M[i])
+    eixoM.insert(i,M[i])
+
+#Printando valores
+print ('P(0): ', P[0])
+print('P: ', P[-1])
+print ('M: ', M[-1])
+print ('R: ', r[-1])
+
+#Plotando grafico das solucoes
+plt.figure(1) #cria janela
+
+plt.subplot(2,1,1) #cria area do primeiro graph (linha,colunas e numero do grafico)
+
+# primeiro grafico
+plt.plot(eixor,eixoM,color ='red') 
+#plt.xlabel('Radius (km)')
+plt.title('White Dwarf Star')
+plt.ylabel('Mass ($M_{\odot}$)')
+
+# segundo graph
+plt.subplot(2,1,2)
+plt.plot(eixor,eixoP,color ='green')
+plt.ylabel('Pressure (?/km$^2$)')
+
+plt.xlabel('Radius (km)')
+
+
+plt.show()
