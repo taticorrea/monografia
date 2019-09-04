@@ -8,8 +8,8 @@ gamma = 4/3
 u = 1/gamma
 N = 10000
 #h = 4.84484484484483 #(10-14)
-#h = 0.86008919 #(10-15)
-h = 1.508151 #(10-16)
+h = 0.86008919 #(10-15)
+#h = 1.508151 #(10-16)
 
 #dp/dr = -alfap^(1/gamma)M/r^2
 #f = f(r,P,M)
@@ -33,7 +33,7 @@ k1M = np.empty(N)
 k2M = np.empty(N)
 k3M = np.empty(N)
 k4M = np.empty(N)
- 
+
 #Listas que ficam salvas e são plotadas
 eixoP = []
 eixoM = []
@@ -49,7 +49,7 @@ eixok4M = []
 
 #Condicoes iniciais
 r[0] = 0.0000000000000000000001
-P[0] = 1E-16
+P[0] = 1E-15
 M[0] = 0
 
 #Condicao para P[R] > 0
@@ -84,10 +84,10 @@ for i in np.arange(N-1):                #(N-1) pois as listas com N elementos te
 
 #Printando valores
 print('\n Caso Relativístico \n')
-print ('P(0): ', P[0])
-print('P[R] : ',P[9999])
-print ('M[R]: ', M[9999])
-print ('R   : ', r[9999])
+print ('P(0) : ',P[0])
+print ('P[R] : ',P[9999])
+print ('M[R] : ',M[9999])
+print ('R    : ',r[9999])
 
 
 ################# Caso NAO relativistico ################# 
@@ -96,8 +96,8 @@ betan = 0.005924
 gamman = 5/3 
 un = 1/gamman
 Nn = 10000           #numero de pontos no grafico
-#hn =                 #C.I P[0] = 10E-15
-hn = 1.336139         #C.I P[0] = 10E-16
+hn =  1.0614          #C.I P[0] = 10E-15
+#hn = 1.336139         #C.I P[0] = 10E-16
 
 #dp/dr = -alfap^(1/gamma)M/r^2
 #f = f(r,P,M)
@@ -137,7 +137,7 @@ eixok4Mn = []
 
 #Condicoes iniciais
 rn[0] = 0.0000000000000000000001
-Pn[0] = 1E-16
+Pn[0] = 1E-15
 Mn[0] = 0
 
 #Condicao para P[R] > 0
@@ -172,10 +172,10 @@ for i in np.arange(Nn-1):                #(N-1) pois as listas com N elementos t
 
 #Printando valores
 print('\n Caso não Relativístico\n')
-print ('P(0): ', Pn[0])
-print('P[R] : ',Pn[9999])
-print ('M[R]: ', Mn[9999])
-print ('R   : ', rn[9999])
+print ('P(0) : ',Pn[0])
+print ('P[R] : ',Pn[9999])
+print ('M[R] : ',Mn[9999])
+print ('R    : ',rn[9999])
 
 #Plotando grafico 
 plt.figure(1) #cria janela
