@@ -33,7 +33,7 @@ k1M = np.empty(N)
 k2M = np.empty(N)
 k3M = np.empty(N)
 k4M = np.empty(N)
-
+ 
 #Listas que ficam salvas e são plotadas
 eixoP = []
 eixoM = []
