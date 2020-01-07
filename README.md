@@ -7,19 +7,18 @@ Programas em python para um Breve Estudo sobre a Estrutura de Estrelas Compactas
 
 
 ## Runge Kutta
-dP/dr = f(r, P(r), M(r))    P(r0) = P0
-dM/dr = g(r, P(r), M(r))    M(x0) = M0
+dP/dr = f(r, P(r), M(r))
+dM/dr = g(r, P(r), M(r))
+P(r0) = P0
+M(x0) = M0
+
 
 k1 = h*f(rn, Pn, Mn)
 l1 = h*g(rn, Pn, Mn)
-
 k2 = h*f(rn + h/2, Pn + k1/2, Mn + l1/2)
 l2 = h*g(rn + h/2, Pn + k1/2, Mn + l1/2)
-
-
 k3 = h*f(rn + h/2, Pn + k2/2, Mn + l2/2)
 l3 = h*g(rn + h/2, Pn + k2/2, Mn + l2/2)
-
 k4 = h*f(rn + h, Pn + k3, Mn + l3)
 l4 = h*g(rn + h, Pn + k3, Mn + l3)
 
