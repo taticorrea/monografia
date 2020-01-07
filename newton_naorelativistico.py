@@ -46,6 +46,7 @@ def rk4():
       P[i+1] = P[i] + k
       M[i+1] = M[i] + l
 
+rk4()
 
 plt.plot(r,M)
 plt.show()
