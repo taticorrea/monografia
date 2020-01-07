@@ -6,8 +6,6 @@ Programas em python para um Breve Estudo sobre a Estrutura de Estrelas Compactas
 
 
 
---- FORMULAÇÃO NEWTONIANA ---
-
 ## Runge Kutta
 dP/dr = f(r, P(r), M(r))    P(r0) = P0
 dM/dr = g(r, P(r), M(r))    M(x0) = M0
