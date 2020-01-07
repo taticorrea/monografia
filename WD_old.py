@@ -1,6 +1,8 @@
 import numpy as np 
 import matplotlib.pyplot as plt
 
+######## CODIGO ANTIGO POR PREUCUÇÃO ########
+
 ################# Caso relativistico ################# 
 alfa = 1.473
 beta = 52.46
