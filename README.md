@@ -11,27 +11,21 @@ dP/dr = f(r, P(r), M(r)) <br/>
 dM/dr = g(r, P(r), M(r)) <br/>
 P(r0) = P0 <br/>
 M(x0) = M0 <br/>
-<br/>
 
 k1 = h*f(rn, Pn, Mn) <br/>
 l1 = h*g(rn, Pn, Mn) <br/>
-<br/> <br/>
 
 k2 = h*f(rn + h/2, Pn + k1/2, Mn + l1/2) <br/>
 l2 = h*g(rn + h/2, Pn + k1/2, Mn + l1/2) <br/>
-<br/><br/>
 
 k3 = h*f(rn + h/2, Pn + k2/2, Mn + l2/2) <br/>
 l3 = h*g(rn + h/2, Pn + k2/2, Mn + l2/2) <br/>
-<br/><br/>
 
 k4 = h*f(rn + h, Pn + k3, Mn + l3) <br/>
 l4 = h*g(rn + h, Pn + k3, Mn + l3) <br/>
-<br/><br/>
 
 k = (1/6) *(k1 + 2k2 + 2k3 + k4) <br/>
 l = (1/6) *(l1 + 2l2 + 2l3 + l4) <br/>
-<br/><br/>
 
 rn+1 = rn + h <br/>
 Pn+1 = Pn + k <br/>
