@@ -2,6 +2,7 @@
 
 Programas em python para um Breve Estudo sobre a Estrutura das Estrelas Compactas
 
+Python programs for a brief study of Compact Stars
 
 
 
