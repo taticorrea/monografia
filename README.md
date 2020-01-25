@@ -33,7 +33,9 @@ Mn+1 = Mn + l <br/>
 <br/><br/>
 
 ## Condições Iniciais
-Initial Conditions <br/>
+Initial Conditions
+
+
 r(0) = 0.0000001 <br/>
 P(0) e [10^-16,10^-14] <br/>
 M(0) = 0
