@@ -1,8 +1,8 @@
 ## MONOGRAFIA 
 
-Programas em python para um Breve Estudo sobre a Estrutura das Estrelas Compactas
+Programas em python para um breve estudo sobre a estrutura das Estrelas Compactas
 
-Python programs for a brief study of Compact Stars
+Python programs for a brief study about structure of Compact Stars
 
 ## Método de Runge Kutta
 Runge Kutta Method
