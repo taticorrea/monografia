@@ -1,4 +1,4 @@
-# MONOGRAFIA
+## MONOGRAFIA 
 
 Programas em python para um Breve Estudo sobre a Estrutura das Estrelas Compactas
 
@@ -7,7 +7,9 @@ Python programs for a brief study of Compact Stars
 
 
 
-## Runge Kutta
+## Método de Runge Kutta
+Runge Kutta Method
+
 dP/dr = f(r, P(r), M(r)) <br/>
 dM/dr = g(r, P(r), M(r)) <br/>
 P(r0) = P0 <br/>
@@ -33,6 +35,8 @@ Pn+1 = Pn + k <br/>
 Mn+1 = Mn + l <br/>
 <br/><br/>
 
+##Condições Iniciais
+Initial Conditions
 r(0) = 0.0000001 <br/>
 P(0) e [10^-16,10^-14] <br/>
 M(0) = 0
