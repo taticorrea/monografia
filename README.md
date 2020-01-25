@@ -4,9 +4,6 @@ Programas em python para um Breve Estudo sobre a Estrutura das Estrelas Compacta
 
 Python programs for a brief study of Compact Stars
 
-
-
-
 ## Método de Runge Kutta
 Runge Kutta Method
 
@@ -36,7 +33,7 @@ Mn+1 = Mn + l <br/>
 <br/><br/>
 
 ## Condições Iniciais
-Initial Conditions
+Initial Conditions <br/>
 r(0) = 0.0000001 <br/>
 P(0) e [10^-16,10^-14] <br/>
 M(0) = 0
