@@ -18,7 +18,8 @@ Estudar brevemente:
 
 ## Equação de Estrutura
 <h1>Formalismo clássico</h1>
-<img src="https://render.githubusercontent.com/render/math?math=\frac{dp(r)}{dr}=-\frac{G\epsilon(r)M(r)}{c^2 r^2}\\ \frac{dM(r)}{dr} = \frac{4\pi r^2\epsilon(r)}{c^2}">
+<img src="https://render.githubusercontent.com/render/math?math=\frac{dp(r)}{dr}=-\frac{G\epsilon(r)M(r)}{c^2 r^2}\\">
+<img src="https://render.githubusercontent.com/render/math?math=\frac{dM(r)}{dr} = \frac{4\pi r^2\epsilon(r)}{c^2}">
 
 <h1>Equações TOV</h1>
 <img src="https://render.githubusercontent.com/render/math?math=\frac{dp(r)}{dr}= -  \frac{GM(r)\epsilon(r)}{c^2r^2}\Big[1+\frac{p(r)}{\epsilon(r)}\Big]\Big[1+\frac{4\pi r^3p(r)}{M(r)c^2}\Big]\Big[{1-\frac{2GM(r)}{c^2r}}\Big]^{-1}">
