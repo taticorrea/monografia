@@ -17,6 +17,7 @@ Estudar brevemente:
 
 
 <h1>Equação de Estrutura</h1>
+
 ## Formalismo clássico
 <img src="https://render.githubusercontent.com/render/math?math=\frac{dp(r)}{dr}=-\frac{G\epsilon(r)M(r)}{c^2 r^2}\\">
 <img src="https://render.githubusercontent.com/render/math?math=\frac{dM(r)}{dr} = \frac{4\pi r^2\epsilon(r)}{c^2}">
@@ -28,6 +29,7 @@ Estudar brevemente:
 
 
 <h1>Equação de estado - Gás de Fermi</h1>
+
 ## Anã Branca
 <li>Pressão dominada por um gás quântico de elétrons livres e completamente degenerados</li>
 <img src="https://render.githubusercontent.com/render/math?math=p(k_F) = \frac{\epsilon_0}{24}\Big[(2x^3 - 3x)\sqrt{(1 + x^2)} + 3senh^{-1}(x)\Big]">
