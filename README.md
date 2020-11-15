@@ -10,14 +10,18 @@ Estudar brevemente:
 
 ## Metodologia
 <li> Derivar as equações de estrutura a partir do formalismo clássico</li>
-<li> Encontrar a EoS exata para uma AB/EN composta por um gás de Fermi de elétrons/nêutrons degenerados  à <img src="https://render.githubusercontent.com/render/math?math=T = 0"> K</li>
+<li> Encontrar a EoS exata para uma AB/EN composta por um gás de Fermi de elétrons/nêutrons degenerados  à <img src="https://render.githubusercontent.com/render/math?math=T = 0> K</li>
 <li> Derivar as EoS's politrópicas a partir dos limites não-relativístico e ultra-relativístico da EoS exata.</li>
 <li> Derivar EoS politrópica para regime qualquer de velocidades</li>
 <li> Implementar uma rotina do método de Runge Kutta de 4ª ordem em Python3 para resolver as equações de estrutura numericamente a partir do formalismo clássico e a partir das equações TOV, bem como para solução numérica das EoS's</li>
 
 
 ## Equação de estado - Gás de Fermi
-<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
+<h1>Anã Branca</h1>
+<li>Pressão dominada por um gás quântico de elétrons livres e degenerados</li>
+<img src="https://render.githubusercontent.com/render/math?math=p(k_F) = \frac{\epsilon_0}{24}\Big[(2x^3 - 3x)\sqrt{(1 + x^2)} + 3senh^{-1}(x)\Big]>
+<li>Densidade de energia dominada pelos nucleões</li>
+<img src="https://render.githubusercontent.com/render/math?math=\epsilon(k)_{N} = x^3\frac{m_e^3m_{N}c^5}{3\pi^2\hbar^3}\Big(\frac {A}{Z}\Big)>
 
 
 
@@ -29,8 +33,8 @@ Estudar brevemente:
 
 dP/dr = f(r, P(r), M(r)) <br/>
 dM/dr = g(r, P(r), M(r)) <br/>
-P(r0) = P0 <br/>
-M(x0) = M0 <br/>
+P(r0) = P0 > 0 <br/>
+M(x0) = 0 <br/>
 
 k1 = h*f(rn, Pn, Mn) <br/>
 l1 = h*g(rn, Pn, Mn) <br/>
