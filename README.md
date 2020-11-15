@@ -10,7 +10,7 @@ Estudar brevemente:
 
 ## Metodologia
 <li> Derivar as equações de estrutura a partir do formalismo clássico</li>
-<li> Encontrar a EoS exata para uma AB/EN composta por um gás de Fermi de elétrons/nêutrons degenerados  à $T = 0$ K</li>
+<li> Encontrar a EoS exata para uma AB/EN composta por um gás de Fermi de elétrons/nêutrons degenerados  à <img src="https://render.githubusercontent.com/render/math?math=T = 0"> K</li>
 <li> Derivar as EoS's politrópicas a partir dos limites não-relativístico e ultra-relativístico da EoS exata.</li>
 <li> Derivar EoS politrópica para regime qualquer de velocidades</li>
 <li> Implementar uma rotina do método de Runge Kutta de 4ª ordem em Python3 para resolver as equações de estrutura numericamente a partir do formalismo clássico e a partir das equações TOV, bem como para solução numérica das EoS's</li>
