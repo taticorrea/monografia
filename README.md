@@ -19,9 +19,9 @@ Estudar brevemente:
 ## Equação de estado - Gás de Fermi
 <h1>Anã Branca</h1>
 <li>Pressão dominada por um gás quântico de elétrons livres e degenerados</li>
-<img src="https://render.githubusercontent.com/render/math?math=p(k_F) = \frac{\epsilon_0}{24}\Big[(2x^3 - 3x)\sqrt{(1 + x^2)} + 3senh^{-1}(x)\Big]>
+<img src="https://render.githubusercontent.com/render/math?math=p(k_F) = \frac{\epsilon_0}{24}\Big[(2x^3 - 3x)\sqrt{(1 + x^2)} + 3senh^{-1}(x)\Big]">
 <li>Densidade de energia dominada pelos nucleões</li>
-<img src="https://render.githubusercontent.com/render/math?math=\epsilon(k)_{N} = x^3\frac{m_e^3m_{N}c^5}{3\pi^2\hbar^3}\Big(\frac {A}{Z}\Big)>
+<img src="https://render.githubusercontent.com/render/math?math=\epsilon(k)_{N} = x^3\frac{m_e^3m_{N}c^5}{3\pi^2\hbar^3}\Big(\frac {A}{Z}\Big)">
 
 
 
